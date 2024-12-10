@@ -56,8 +56,10 @@ impl Grid {
     // FIXME: implement fmt
     fn print(&self) {
         let mut s = String::new();
-        for (i,t) in self.tiles.iter().enumerate() {
-            if i % self.width == 0 {s.push('\n')}
+        for (i, t) in self.tiles.iter().enumerate() {
+            if i % self.width == 0 {
+                s.push('\n')
+            }
             s.push(*t);
         }
         print!("{s}\n");
