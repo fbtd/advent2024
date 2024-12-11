@@ -1,0 +1,3 @@
+cargo build && rust-gdb -q ./target/debug/day_11
+
+65601038650482 too low
